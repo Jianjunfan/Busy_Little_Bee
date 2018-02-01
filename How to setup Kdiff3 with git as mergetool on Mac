@@ -1,0 +1,3 @@
+ How to setup Kdiff3 with git as mergetool
+1. Download kdiff3 OS X package from their website(sourceforge)
+   Install the app in application folder
