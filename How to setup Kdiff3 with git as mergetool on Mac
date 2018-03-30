@@ -28,3 +28,5 @@ $ git merge dev
    # Merge from dev branch to current branch
 $ git mergetool
    # if have conflict, will launch kdiff3 UI and ready to resolve conflict
+   
+Note: Close kdiff3 will automatically start kdiff3 tool if have more conflicted files
