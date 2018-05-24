@@ -16,3 +16,6 @@ server:
  More info: 
    - https://www.sslshopper.com/article-how-to-create-a-self-signed-certificate-using-java-keytool.html
    - https://docs.oracle.com/javase/1.5.0/docs/tooldocs/solaris/keytool.html
+   - https://docs.oracle.com/cd/E19509-01/820-3503/ggfen/index.html
+   
+ Note: in *.jks file will contains both KeyStores(private key) and TrustStores(public key and certification)
