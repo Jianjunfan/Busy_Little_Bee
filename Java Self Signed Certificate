@@ -1,0 +1,14 @@
+Java Create a Self Signed Certificate using Java Keytool, for example below command:
+  
+  - keytool -genkey -keyalg RSA -alias server_selfsigned -keystore server_keystore.jks -storepass hello123 -validity 360 -keysize 2048
+
+And if use Spring-Framework, need add below ssl config in yml property file:
+
+server:
+    port: 8443
+    ssl.key-alias: server_selfsigned
+    ssl.key-password: hello123
+    ssl.key-store: classpath:server_keystore.jks
+#  key-store-provider: SUN
+    ssl.key-store-type: JKS
+    ssl.enabled: false
