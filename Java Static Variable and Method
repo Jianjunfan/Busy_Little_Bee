@@ -1,3 +1,13 @@
 1. Both static variable and method are belong to the whole class, not one instance. So, these static variable and method will 
 be shared by all instances
-2. 
+2. Both static variable and method, the memsory be allocated into permanent generation heap.
+3. What if static variable refers to an Object ?
+   static int i = 1;
+   static Object obj = new Object();
+   In first line,  the value 1 would be stored in PermGen section. In second line, the reference obj would be stored in PermGen section 
+   and the Object it refers to would be stored in heap section.
+4. Both static variable and method can be refered by the class name itself or reference to the Object of that class.
+5. Because staic method belong to global, not belong to one instance, so "this" keywork can not be used in staic method. 
+6. staic method can not be overriding, but can overload. Because overriding is binding during running-time, 
+   overload is binding during compile-time.
+   
