@@ -1,4 +1,4 @@
-* Both static variable and method are belong to the whole class, not one instance. So, these static variable and method will 
+# Both static variable and method are belong to the whole class, not one instance. So, these static variable and method will 
 be shared by all instances
 - Both static variable and method, the memsory be allocated into permanent generation heap.
 - What if static variable refers to an Object ?
