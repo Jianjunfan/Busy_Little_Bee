@@ -1,0 +1,7 @@
+Mian framework:
+ - Jackson
+ - Google Gson
+ - org.json.simple simple 
+ 
+ ## Useful link article:
+  - Intro to the Jackson ObjectMapper [https://www.baeldung.com/jackson-object-mapper-tutorial]
