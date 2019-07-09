@@ -5,3 +5,4 @@ Mian framework:
  
  # Useful link article:
   - Intro to the Jackson ObjectMapper [https://www.baeldung.com/jackson-object-mapper-tutorial]
+  - Map Serialization and Deserialization with Jackson [https://www.baeldung.com/jackson-map]
