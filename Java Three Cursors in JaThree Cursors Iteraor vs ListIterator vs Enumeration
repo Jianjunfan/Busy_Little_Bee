@@ -1,0 +1,34 @@
+Website:
+https://medium.com/@abhimanyuk9871/three-cursors-in-java-collections-c93f75f69b16
+
+1. Enumeration
+  - Used to retrieve elements one by one from a collection.
+  - Enumerations are also used to specify the input streams to a SequenceInputStream
+  - How to create Enumeration on collections : call elements() method.
+Limitations:
+  - Not a universal Iterator i.e only applicable to elements of a vector and keys and values of Hashtable.
+  - Can not modify collection while iterating through enumeration.
+  - Only forward iteration is possible.
+  
+2. Iterator
+  - Iterators in java enable us to retrieve elements one by one.
+  - Iterator support both read and remove operations unlike Enumeration.
+  - Iterators are universal, can be applied to all collections.
+  - Iterator can be created by calling iterator() method on any collection.
+  - Iterators differ from enumerations in two ways:
+  - Iterators allow the caller to remove elements from the underlying collection during the iteration with well-defined semantics.
+Method names have been improved.
+Limitations:
+  - Single Direction (forward) cursor only.
+  - Only read/remove is supported. add/replace is not supported.
+  
+3. What is ListIterator?
+  - An iterator for lists that allows the programmer to traverse the list in either direction.
+  - Modify the list during iteration i.e add ,set or replace, remove element.
+  - Obtain the iterator’s current position in the list.
+  - ListIterator Can also be started from a specific index in the list.
+  - ListIterator extends Iterator.
+  - Check all methods: https://docs.oracle.com/javase/8/docs/api/java/util/ListIterator.html
+Limitations:
+  - We can only create listIterator on a List object only(Since listIterator() method is defined in List interface)
+    not on other collections like HashSet, TreeSet etc.
