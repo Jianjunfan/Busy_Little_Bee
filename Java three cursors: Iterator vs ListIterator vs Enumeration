@@ -1,5 +1,6 @@
 Website:
-https://medium.com/@abhimanyuk9871/three-cursors-in-java-collections-c93f75f69b16
+ - https://medium.com/@abhimanyuk9871/three-cursors-in-java-collections-c93f75f69b16
+ - https://techdifferences.com/difference-between-iterator-and-listiterator-in-java.html
 
 1. Enumeration
   - Used to retrieve elements one by one from a collection.
