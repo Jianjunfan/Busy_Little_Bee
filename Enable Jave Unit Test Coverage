@@ -1,0 +1,48 @@
+1. Install EclEmma in STS help->install new software --> input http://update.eclemma.org/
+   for more info: https://www.eclemma.org/installation.html
+2. enable jacoco plugin in maven pom file: (more info: https://www.mkyong.com/maven/jacoco-java-code-coverage-maven-example/)
+   <properties>
+		<jacoco.version>0.7.5.201505241946</jacoco.version>
+	</properties>
+  
+  <plugin>
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>${jacoco.version}</version>
+				<executions>
+					<execution>
+						<id>prepare-agent</id>
+						<goals>
+							<goal>prepare-agent</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>report</id>
+						<phase>prepare-package</phase>
+						<goals>
+							<goal>report</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>post-unit-test</id>
+						<phase>test</phase>
+						<goals>
+							<goal>report</goal>
+						</goals>
+						<configuration>
+							<!-- Sets the path to the file which contains the execution data. -->
+
+							<dataFile>target/jacoco.exec</dataFile>
+							<!-- Sets the output directory for the code coverage report. -->
+							<outputDirectory>target/jacoco-ut</outputDirectory>
+						</configuration>
+					</execution>
+				</executions>
+				<configuration>
+					<systemPropertyVariables>
+						<jacoco-agent.destfile>target/jacoco.exec</jacoco-agent.destfile>
+					</systemPropertyVariables>
+				</configuration>
+			</plugin>
+  
+  3. from project, right-click --> Coverage As (Junit Test) 
